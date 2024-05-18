@@ -1,18 +1,24 @@
 import './App.css'
-import {Paths, PublicRoute, LayoutPaths, Pages} from "@/pages/routers";
+import {Pages, Paths, RoutingWrapper} from "@/pages/routers";
 import {
-  BrowserRouter as Router
+  Navigate,
+  Route, Routes
 } from 'react-router-dom';
-import Guest from "@/layouts/Guest";
+import Guest from "@/layouts/Guest/index.jsx";
+import React from "react";
 
 function App() {
+  const loggedIn = false;
   return (
     <div className={'App'}>
-      <Router primary={false}>
-        <Guest path={LayoutPaths.Guest}>
-          <PublicRoute path={Paths.Home} component={Pages.Home} />
-        </Guest>
-      </Router>
+      <Guest>
+        <Routes primary={false}>
+          <Route path={Paths.Home} element={<RoutingWrapper component={Pages.Home} />} />
+          {loggedIn ? (
+            <Route path={Paths.Test} element={<RoutingWrapper component={Pages.Test}/>}/>
+          ) : <Route path="*" element={<Navigate replace to="/"/>} />}
+        </Routes>
+      </Guest>
     </div>
   )
 }

@@ -18,24 +18,20 @@ const retryLoadComponent = (fn, retriesLeft = 5, interval = 1000) =>
   });
 
 const Home = lazy(() => retryLoadComponent(() => import('@/pages/Home/index.jsx')));
-export const LayoutPaths = {
-  Guest: '/',
-};
-
-export const ModulePaths = {
-  Rest: '*',
-};
+const Test = lazy(() => retryLoadComponent(() => import('@/pages/Test/index.jsx')));
 
 export const Paths = {
   Home: '/',
+  Test: '/test',
   Rest: '*',
 };
 
 export const Pages = {
   Home,
+  Test
 };
 
-export const PublicRoute = ({ component: Component, ...rest }) => (
+export const RoutingWrapper = ({ component: Component, ...rest }) => (
   <Suspense fallback={<Spin spinning={true} style={{ minHeight: '100vh' }} />}>
     <Component {...rest} />
   </Suspense>
