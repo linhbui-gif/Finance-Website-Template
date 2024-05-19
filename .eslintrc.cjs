@@ -6,11 +6,13 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
+    'react-app',
+    'plugin:prettier/recommended'
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh','prettier', 'eslint:recommended', 'plugin:prettier/recommended'],
+  plugins: ['react-refresh', 'prettier', 'react', 'unused-imports'],
   rules: {
     'react/jsx-no-target-blank': 'off',
     'react-refresh/only-export-components': [
@@ -20,48 +22,41 @@ module.exports = {
     'prettier/prettier': [
       'error',
       {
-        'singleQuote': true
+        singleQuote: true
       }
     ]
   },
-  'overrides': [
+  overrides: [
     {
-      'files': ['**/*.js', '**/*.jsx'],
-      'plugins': ['unused-imports'],
-      'extends': [
-        'next/core-web-vitals',
-        'plugin:prettier/recommended'
-      ],
-      'parserOptions': {
-      },
-      'rules': {
+      files: ['**/*.js', '**/*.jsx'],
+      rules: {
         'prettier/prettier': [
           'error',
           {
-            'singleQuote': true
+            singleQuote: true
           }
         ],
         'react/destructuring-assignment': 'off', // Vscode doesn't support automatically destructuring, it's a pain to add a new variable
         'jsx-a11y/anchor-is-valid': 'off', // Next.js use his own internal link system
         'react/require-default-props': 'off', // Allow non-defined react props as undefined
         'react/jsx-props-no-spreading': 'off', // _app.tsx uses spread operator and also, react-hook-form
-        '@next/next/no-img-element': 'off', // We currently not using next/image because it isn't supported with SSG mode
+        'react/prop-types' : 'off',
         'import/order': [
           'error',
           {
-            'groups': ['builtin', 'external', 'internal'],
-            'pathGroups': [
+            groups: ['builtin', 'external', 'internal'],
+            pathGroups: [
               {
-                'pattern': 'react',
-                'group': 'external',
-                'position': 'before'
+                pattern: 'react',
+                group: 'external',
+                position: 'before'
               }
             ],
-            'pathGroupsExcludedImportTypes': ['react'],
+            pathGroupsExcludedImportTypes: ['react'],
             'newlines-between': 'always',
-            'alphabetize': {
-              'order': 'asc',
-              'caseInsensitive': true
+            alphabetize: {
+              order: 'asc',
+              caseInsensitive: true
             }
           }
         ],
@@ -70,10 +65,10 @@ module.exports = {
         'unused-imports/no-unused-imports': 'error',
         'unused-imports/no-unused-vars': [
           'warn',
-          { 'argsIgnorePattern': '^_' }
+          { argsIgnorePattern: '^_' }
         ],
-        'no-console':['off', {}]
+        'no-console': ['off', {}]
       }
     }
   ]
-}
+};

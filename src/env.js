@@ -6,12 +6,12 @@ const env = {
   api: {
     baseUrl: {
       service: process.env.REACT_APP_SERVICE_BASE_URL ?? '',
-      app: process.env.REACT_APP_SERVICE_APP_BASE_URL ?? '',
-    },
+      app: process.env.REACT_APP_SERVICE_APP_BASE_URL ?? ''
+    }
   },
   cookie: {
-    domain: process.env.REACT_APP_COOKIE_DOMAIN ?? '',
-  },
-};
+    domain: process.env.REACT_APP_COOKIE_DOMAIN ?? ''
+  }
+}
 
-export default env;
+export default env

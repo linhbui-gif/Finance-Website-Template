@@ -1,0 +1,7 @@
+.Button .ant-btn {
+  @apply h-[5.5rem] border-0 bg-white rounded-sm text-text-base p-0
+}
+
+.Button .ant-btn.btn-yellow {
+  @apply bg-secondary
+}

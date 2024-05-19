@@ -1,8 +1,4 @@
 const Test = () => {
-  return (
-    <div className={'Home'}>
-      Hello TEST
-    </div>
-  )
+  return <div className={'Home'}>Hello TEST</div>
 }
-export default Test;
+export default Test

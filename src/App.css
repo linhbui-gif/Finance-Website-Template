@@ -1,3 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+html {
+  @apply xl:text-[10px] lg:text-[7px] text-[10px]
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply bg-white-brand-color
+}

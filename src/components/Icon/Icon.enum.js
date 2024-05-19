@@ -1,6 +1,6 @@
 export const EIconName = {
-  ArrowDown: 'ArrowDown',
-};
+  ArrowDown: 'ArrowDown'
+}
 export const EIconColor = {
-  STYLE_ARROW: '#d9d9d9',
-};
+  STYLE_ARROW: '#d9d9d9'
+}

@@ -1,5 +1,3 @@
-import env from '@/env';
-
 export const AppConfig = {
   site_name: 'Finance App',
   title: 'Finance',
@@ -7,13 +5,13 @@ export const AppConfig = {
   url: 'https://example.com',
   locale: 'en',
   author: 'Finance',
-  pagination_size: 5,
-};
+  pagination_size: 5
+}
 
 export const addTrailingSlash = (url) => {
-  return url.replace(/\/?$/, '/');
-};
+  return url.replace(/\/?$/, '/')
+}
 
 export const isBrowser = () => {
-  return typeof window !== 'undefined';
-};
+  return typeof window !== 'undefined'
+}
