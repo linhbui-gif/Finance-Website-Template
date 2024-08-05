@@ -29,7 +29,6 @@ module.exports = {
       'files': ['**/*.js', '**/*.jsx'],
       'plugins': ['unused-imports'],
       'extends': [
-        'next/core-web-vitals',
         'plugin:prettier/recommended'
       ],
       'parserOptions': {
@@ -45,7 +44,6 @@ module.exports = {
         'jsx-a11y/anchor-is-valid': 'off', // Next.js use his own internal link system
         'react/require-default-props': 'off', // Allow non-defined react props as undefined
         'react/jsx-props-no-spreading': 'off', // _app.tsx uses spread operator and also, react-hook-form
-        '@next/next/no-img-element': 'off', // We currently not using next/image because it isn't supported with SSG mode
         'import/order': [
           'error',
           {
