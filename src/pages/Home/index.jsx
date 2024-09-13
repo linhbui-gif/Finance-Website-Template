@@ -1,15 +1,14 @@
-import Container from "@/containers/Container";
-import Icon from "@/components/Icon";
-import {EIconName} from "@/components/Icon/Icon.enum.js";
-import {Link} from "react-router-dom";
-
+import Project from "@/containers/Project";
+import Experience from "@/containers/Experience";
+import Tools from "@/containers/Tools/index.js";
+import Communities from "@/containers/Communities/index.js";
 const Home = () => {
   return (
     <div className={'Home'}>
-      <Container >
-        <Link to={'/test'} >Go to test page</Link>
-        <Icon name={EIconName.ArrowDown} />
-      </Container>
+      <Project/>
+      <Experience/>
+      <Tools />
+      <Communities />
     </div>
   )
 }
