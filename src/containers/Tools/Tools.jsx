@@ -4,7 +4,7 @@ import Flex from "@/containers/Flex/Flex.jsx";
 import { ICON_TOOLS } from "@/constants/constants.js";
 const Tools = () => {
   return (
-    <div className={'pt-[8rem] '}>
+    <section className={'pt-[8rem] '}>
       <Flex className={'justify-between items-end'}>
         <h2 className={'mb-[8rem] pl-[17rem] text-[12.8rem] text-white uppercase font-[700]'}>Techstack <br/> & <br/> TOOLS</h2>
         <Flex>
@@ -27,7 +27,7 @@ const Tools = () => {
           })
         }
       </Flex>
-    </div>
+    </section>
   )
 }
 export default Tools

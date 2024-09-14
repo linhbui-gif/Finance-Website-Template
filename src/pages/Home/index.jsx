@@ -12,7 +12,8 @@ const Home = () => {
   useEffect(() => {
     const scroll = new LocomotiveScroll({
       el: scrollContainerRef.current,
-      smooth: true
+      smooth: true,
+      smoothMobile: true
     });
 
     return () => {

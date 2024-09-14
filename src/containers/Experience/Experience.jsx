@@ -1,6 +1,8 @@
+import Container from "@/containers/Container/index.js";
+
 const Experience = () => {
   return (
-    <div className={'pt-[6rem] pl-[17rem] bg-white'}>
+    <section className={'pt-[6rem] pl-[17rem] bg-white'}>
       <h2 className={'mb-[8rem] text-[12.8rem] text-black uppercase font-[700]'}>Resume & <br/> Experience</h2>
       <div className={'flex flex-nowrap overflow-x-scroll'}>
         <div className="item flex gap-x-[7rem] mr-[4rem] min-w-[79.3rem]" style={{ borderRight: "1px solid #BFBFBF" }}>
@@ -56,7 +58,7 @@ const Experience = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 export default Experience

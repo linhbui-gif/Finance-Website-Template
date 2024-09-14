@@ -39,7 +39,7 @@ const Project = () => {
   ];
 
   return (
-    <div ref={textRef}>
+    <section ref={textRef}>
       <Container className={'project-head'}>
         <Flex className={'justify-between'}>
           <div>
@@ -69,7 +69,7 @@ const Project = () => {
           ))}
         </div>
       </Container>
-    </div>
+    </section>
   );
 };
 

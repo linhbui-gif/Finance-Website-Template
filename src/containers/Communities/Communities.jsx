@@ -2,9 +2,11 @@ import ImagePrintDesign from "@/assets/images/image-print-design.png"
 import ImageGrid from "@/assets/images/image-grid-communities.png"
 import ImageColorMe from "@/assets/images/image-color-me.png"
 import Flex from "@/containers/Flex/index.js";
+import Container from "@/containers/Container/index.js";
+
 const Communities = () => {
   return (
-    <div className={'relative pt-[6rem]'}>
+    <section className={'relative pt-[6rem]'}>
       <h2 className={'text-[12.8rem] pl-[17rem] text-white uppercase font-[700]'}>UI /UX <br/> communities</h2>
       <div className={'relative'}>
         <div className={''}>
@@ -23,7 +25,7 @@ const Communities = () => {
           Actively participate in training activities as well as contribute and learn to develop the profession.
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 export default Communities
