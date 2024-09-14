@@ -22,12 +22,12 @@ const Home = () => {
   }, []);
 
   return (
-    <div className={'Home'} ref={scrollContainerRef}>
+    <main className={'Home'} ref={scrollContainerRef} >
       <Project/>
       <Experience/>
       <Tools />
       <Communities />
-    </div>
+    </main>
   );
 };
 
