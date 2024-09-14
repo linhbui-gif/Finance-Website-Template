@@ -7,10 +7,12 @@ import {
 import Guest from "@/layouts/Guest/index.jsx";
 import React from "react";
 
+
 function App() {
   const loggedIn = false;
+
   return (
-    <div className={'App'}>
+    <div className={'App'} >
       <Guest>
         <Routes primary={false}>
           <Route path={Paths.Home} element={<RoutingWrapper component={Pages.Home} />} />
