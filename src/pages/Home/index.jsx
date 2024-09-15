@@ -13,7 +13,7 @@ const Home = () => {
     const scroll = new LocomotiveScroll({
       el: scrollContainerRef.current,
       smooth: true,
-      smoothMobile: true
+      smoothMobile: true,
     });
 
     return () => {

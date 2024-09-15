@@ -43,12 +43,10 @@ const Project = () => {
       <Container className={'project-head'}>
         <Flex className={'justify-between'}>
           <div>
-            <Textfit mode="single" max={128} min={40} >
               <div className="flex justify-between">
-                <h2 className={'text-white uppercase font-[700]'}>projects</h2>
-                <span className={'bg-gradient-pink-purple uppercase font-[700]'}>20+</span>
+                <h2 className={'text-[12.8rem] leading-[100%] text-white uppercase font-[700]'}>projects</h2>
+                <span className={'text-[12.8rem] leading-[100%] bg-gradient-pink-purple uppercase font-[700]'}>20+</span>
               </div>
-            </Textfit>
             <p className={'text-Primary/75 text-[3.2rem] leading-[140.8%] tracking-[1.92px]'}>
               I have more than 6 years of experience in software as FrontEnd and more than 3 years of experience in UI UX design including finance, blockchain, tourism, construction, e-commerce,...
             </p>

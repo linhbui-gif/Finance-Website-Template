@@ -4,9 +4,9 @@ import Flex from "@/containers/Flex/Flex.jsx";
 import { ICON_TOOLS } from "@/constants/constants.js";
 const Tools = () => {
   return (
-    <section className={'pt-[8rem] '}>
+    <section className={'container mt-[8rem]'}>
       <Flex className={'justify-between items-end'}>
-        <h2 className={'mb-[8rem] pl-[17rem] text-[12.8rem] text-white uppercase font-[700]'}>Techstack <br/> & <br/> TOOLS</h2>
+        <h2 className={'mb-[8rem] text-[12.8rem] leading-[100%] text-white uppercase font-[700]'}>Techstack <br/> & <br/> TOOLS</h2>
         <Flex>
           <div className="item p-[8.4rem] border-item-tools bg-item-tools">
             <img src={ImageToolFigma} className={'aspect-[120/120]'} alt="" />

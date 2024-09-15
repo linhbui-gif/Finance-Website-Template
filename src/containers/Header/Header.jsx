@@ -6,7 +6,7 @@ import Flex from "@/containers/Flex";
 
 const Header = () => {
   return (
-    <div className={'py-[2rem]'}>
+    <nav className={'py-[2rem]'}>
       <Container>
         <Flex className={'justify-between'}>
           <LazyLoadImage src={ImageTest} width={106} height={32} />
@@ -22,7 +22,7 @@ const Header = () => {
           </Flex>
         </Flex>
       </Container>
-    </div>
+    </nav>
   )
 }
 export default Header;
