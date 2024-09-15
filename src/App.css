@@ -16,9 +16,8 @@ ul,li {
   list-style: none;
 }
 .container {
-  max-width: 2560px !important;
-  padding-left: 17rem;
-  padding-right: 17rem;
+  max-width: 1640px !important;
+  margin: 0 auto;
 }
 
 nav {
@@ -85,7 +84,11 @@ nav {
 }
 
 .bg-opacity {
-  position: relative;
+  width: 100vw;
+  position: absolute;
+  top: 30%;
+  left: 0;
+  right: 0;
 }
 
 .bg-opacity::before {

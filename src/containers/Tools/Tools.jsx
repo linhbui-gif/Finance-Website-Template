@@ -1,8 +1,11 @@
 import Flex from "@/containers/Flex/Flex.jsx";
 import { ICON_TOOLS } from "@/constants/constants.js";
+import Container from "@/containers/Container/index.js";
+
 const Tools = () => {
   return (
-    <section className={'container mt-[8rem]'}>
+    <section className={'mt-[8rem]'}>
+      <Container>
       <Flex className={'justify-between items-end'}>
         <h2 className={'mb-[-17rem] text-[12.8rem] leading-[100%] text-white uppercase font-[700]'}>Techstack <br/> & <br/> TOOLS</h2>
       </Flex>
@@ -25,6 +28,7 @@ const Tools = () => {
         }
 
       </Flex>
+      </Container>
     </section>
   )
 }
