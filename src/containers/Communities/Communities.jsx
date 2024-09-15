@@ -1,18 +1,19 @@
 import ImagePrintDesign from "@/assets/images/image-print-design.png"
 import ImageGrid from "@/assets/images/image-grid-communities.png"
 import ImageColorMe from "@/assets/images/image-color-me.png"
+import ImagePattern from "@/assets/images/pattern-community.png"
 import Flex from "@/containers/Flex/index.js";
 import Container from "@/containers/Container/index.js";
 
 const Communities = () => {
   return (
-    <section className={'relative pt-[6rem]'}>
-      <h2 className={'text-[12.8rem] pl-[17rem] text-white uppercase font-[700]'}>UI /UX <br/> communities</h2>
+    <section className={'relative pt-[17rem]'}>
+      <h2 className={'text-[12.8rem] pl-[17rem] text-white leading-[100%] uppercase font-[700]'}>UI /UX <br/> communities</h2>
       <div className={'relative'}>
-        <div className={''}>
-          <img src={ImageGrid} className={'w-full translate-y-[-24%]'} alt="" />
+        <div className={'absolute z-0 -top-2/4 left-[0] right-[0] -bottom-2/4'}>
+          <img src={ImageGrid} className={'w-full translate-y-[-24%] opacity-30 object-none'} alt="" />
         </div>
-        <Flex className={'absolute top-[26rem] w-full mb-2 justify-center gap-x-[7rem] py-[5rem] communities-style'}>
+        <Flex className={'mt-[16rem] mb-[16rem] w-full mb-2 justify-center gap-x-[7rem] py-[5rem] communities-style bg-opacity'}>
           <div>
             <img src={ImagePrintDesign} alt="" />
           </div>
@@ -20,9 +21,12 @@ const Communities = () => {
             <img src={ImageColorMe} alt="" />
           </div>
         </Flex>
-        <div className={'absolute right-[2rem] bottom-[47rem] max-w-[112rem] text-[3.6rem] text-[#E0E0E0] font-[400]'}>
+        <div className={'ml-[auto] mr-[17rem] right-[2rem] max-w-[112rem] text-[3.6rem] text-[#E0E0E0] font-[400]'}>
           Operated within  the UI/UX community through active facilitation of industry-relevant events and skill-building workshops. <br/>
           Actively participate in training activities as well as contribute and learn to develop the profession.
+        </div>
+        <div className={'absolute -top-[80%] left-[0] right-[0] bottom-0 w-[500px] z-10'}>
+          <img src={ImagePattern} className={'w-full'} alt="" />
         </div>
       </div>
     </section>
