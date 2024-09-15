@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useLayoutEffect, useRef } from "react";
 import 'locomotive-scroll/dist/locomotive-scroll.css';
 import Project from "@/containers/Project";
 import Experience from "@/containers/Experience";
@@ -9,11 +9,12 @@ import LocomotiveScroll from 'locomotive-scroll';
 const Home = () => {
   const scrollContainerRef = useRef(null);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const scroll = new LocomotiveScroll({
       el: scrollContainerRef.current,
       smooth: true,
       smoothMobile: true,
+      lerp: 0.1,
     });
 
     return () => {
