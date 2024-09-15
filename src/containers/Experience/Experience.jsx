@@ -9,8 +9,7 @@ const Experience = () => {
     const scroll = new LocomotiveScroll({
       el: scrollContainerRef.current,
       smooth: true,
-      smoothMobile: true,
-      direction: 'horizontal', // Thêm để hỗ trợ scroll ngang
+      direction: 'horizontal',
     });
   
     return () => {
@@ -19,7 +18,7 @@ const Experience = () => {
   }, []);
   
   return (
-    <section className={'pt-[6rem] pl-[17rem] bg-white'}>
+    <section className={'pt-[6rem] pl-[17rem] bg-white relative'}>
       <h2 className={'mb-[8rem] text-[12.8rem] leading-[100%] text-black uppercase font-[700]'}>Resume & <br/> Experience</h2>
       <div className={'experience-horizontal'} data-scroll data-scroll-direction="horizontal" data-scroll-speed="2" ref={scrollContainerRef}>
         <div className="item flex gap-x-[7rem] mr-[4rem] min-w-[79.3rem]" style={{ borderRight: "1px solid #BFBFBF" }}>
